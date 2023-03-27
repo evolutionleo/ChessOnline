@@ -1,0 +1,50 @@
+{
+    "name": "warp-framework",
+    "version": "4.2.1",
+    "private": true,
+    "description": "kappa",
+    "main": "server.js",
+    "author": {
+        "name": "Evoleo"
+    },
+    "type": "module",
+    "scripts": {
+        "dev": "node . --env=dev",
+        "development": "node . --env=dev",
+        "prod": "node . --env=prod",
+        "production": "node . --env=prod"
+    },
+    "dependencies": {
+        "@msgpack/msgpack": "^2.3.0",
+        "chalk": "^5.0.0",
+        "detect-collisions": "^3.1.3",
+        "extend": "^3.0.2",
+        "minimist": "^1.2.6",
+        "module-alias": "^2.2.2",
+        "mongoose": "^6.4.6",
+        "node": "^16.0.0",
+        "performance-now": "^2.1.0",
+        "rbush": "^3.0.1",
+        "uuid": "^8.3.2",
+        "ws": "^8.3.0"
+    },
+    "devDependencies": {
+        "@types/node": "^15.12.1",
+        "@types/rbush": "^3.0.0",
+        "@types/uuid": "^8.3.1",
+        "0x": "^5.0.0",
+        "typescript": "^3.9.10"
+    },
+    "imports": {
+        "#root/*": "./*.js",
+        "#custom/*": "./custom/*.js",
+        "#internal/*": "./internal/*.js",
+        "#schemas/*": "./internal/schemas/*.js",
+        "#concepts/*": "./internal/concepts/*.js",
+        "#entity/*": "./internal/entities/entity_types/*.js",
+        "#entities/*": "./internal/entities/*.js",
+        "#initializers/*": "./internal/initializers/*.js",
+        "#util/*": "./internal/util/*.js",
+        "#types/*": "./internal/types/*.js"
+    }
+}

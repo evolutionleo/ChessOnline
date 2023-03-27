@@ -1,0 +1,16 @@
+{
+    "compilerOptions": {
+        "paths": {
+            "#root/*": ["./*"],
+            "#custom/*": ["./custom/*"],
+            "#internal/*": ["./internal/*"],
+            "#schemas/*": ["./internal/schemas/*"],
+            "#concepts/*": ["./internal/concepts/*"],
+            "#entity/*": ["./internal/entities/entity_types/*"],
+            "#entities/*": ["./internal/entities/*"],
+            "#initializers/*": ["./internal/initializers/*"],
+            "#util/*": ["./internal/util/*"],
+            "#types/*": ["./internal/types/*"]
+        }
+    }
+}
